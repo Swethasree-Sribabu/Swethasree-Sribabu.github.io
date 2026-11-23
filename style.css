@@ -236,7 +236,7 @@ figure.card-media img { flex:1; height:0; min-height:0; }
 .work-done, .work-finding { font-size:14px; color:var(--muted); line-height:1.75; margin-bottom:17px; }
 .research-grid .role-line { margin-top:8px; margin-bottom:4px; }
 .research-grid .award { margin-bottom:9px; }
-.face-topic { grid-column:1 / -1; }
+.research-compact { grid-column:1 / -1; }
 .research-compact .card-body { padding:25px 28px; }
 .research-compact h3 { font-size:22px; line-height:1.45; }
 .research-compact .card-summary { font-size:15px; margin-bottom:12px; }
