@@ -147,3 +147,13 @@ figcaption { color:var(--muted); font-size:12px; line-height:1.55; margin-top:8p
 
 .media-toggle { font:12px/1.5 Arial,sans-serif; color:var(--accent); background:#fff; border:1px solid #b9cbd7; border-radius:3px; padding:3px 9px; margin-top:7px; cursor:pointer; }
 .media-toggle[hidden] { display:none; }
+
+/* V3b: compact evidence strip, with the two study samples kept separate. */
+.credibility { color:var(--ink); font-weight:600; }
+.experience-glance { border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:21px 0 23px; margin:14px 0 6px; }
+.experience-glance h2 { font:normal 20px/1.4 Georgia,serif; margin-bottom:16px; }
+.glance-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:20px; margin:0; }
+.glance-grid dt { font-size:14px; line-height:1.5; font-weight:700; margin-bottom:6px; }
+.glance-grid dd { margin:0; color:var(--muted); font-size:12px; line-height:1.6; }
+@media(max-width:760px) { .glance-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:19px; } }
+@media(max-width:580px) { .glance-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; } .glance-grid > div:last-child { grid-column:1 / -1; } }
