@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Swethasree Sribabu | Research</title>
-<meta name="description" content="Swethasree Sribabu, MS by Research at IIT Madras. Digital humans, facial expression representation, and spatial perception in AR/VR.">
+<meta name="description" content="I build capture tools, datasets, and representations for small, fast facial motion. Research by Swethasree Sribabu at IIT Madras.">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="style.css">
 <script src="site.js" defer></script>
@@ -20,17 +20,18 @@
     <div class="hero-copy">
       <p class="eyebrow">MS by Research · Touch Lab, IIT Madras</p>
       <h1 id="name">Swethasree Sribabu</h1>
-      <p class="hero-intro">I study how wearable sensors capture facial expressions, and how those signals can support digital humans and immersive experiences. At IIT Madras, I work on VR-native datasets and facial expression representation.</p>
-      <ul class="interests" aria-label="Research interests">
-        <li>Digital humans and subtle facial motion</li>
-        <li>Facial expression capture and representation</li>
-        <li>Spatial and egocentric perception in AR/VR</li>
-        <li>VR-native datasets, benchmarks, and user studies</li>
-      </ul>
+      <p class="hero-intro">I build capture tools, datasets, and representations for the small, fast facial movements that headsets and 3D face models can lose. I want to know which movements survive the pipeline, and which ones an avatar or an immersive experience actually uses.</p>
       <div class="actions"><a class="button primary" href="#research">Research <span aria-hidden="true">↘</span></a><a class="button" href="assets/Swethasree_Sribabu_CV.pdf">CV <span aria-hidden="true">↗</span></a></div>
     </div>
     <figure class="portrait"><img src="assets/SwePhoto.jpg" alt="Swethasree Sribabu" width="400" height="400" fetchpriority="high"></figure>
   </section>
+
+
+  <ul class="proof-strip" aria-label="Research and project evidence">
+    <li>Best Paper Honorable Mention<span>CVPR 2026 workshop</span></li>
+    <li>Dolby Laboratories<span>Research collaboration at Touch Lab</span></li>
+    <li>Smart India Hackathon 2022 winner<span>Project later funded by the Ministry of Culture</span></li>
+  </ul>
 
   <dl class="facts" aria-label="At a glance">
     <div><dt>Now</dt><dd>Research Associate<span>Touch Lab, IIT Madras</span></dd></div>
@@ -39,16 +40,43 @@
     <div><dt>Industry</dt><dd>XR development &amp; Unity<span>XR Labs · Imaginate · OmniSpatial</span></dd></div>
   </dl>
 
+
+  <section id="questions" class="section" aria-labelledby="questions-title">
+    <div class="section-heading"><h2 id="questions-title">Research questions</h2><p>What survives the sensor, the model, and the application?</p></div>
+    <div class="question-grid">
+      <h3>Can we capture micro-expressions while a headset hides the face?</h3>
+      <h3>Can a compact 3D face model keep both tiny and large expressions?</h3>
+      <h3>When does a facial reaction actually change what a VR viewer sees?</h3>
+    </div>
+    <p class="ongoing-topic">Ongoing: multimodal egocentric capture with smart glasses (audio and video).</p>
+  </section>
+
   <section id="research" class="section" aria-labelledby="research-title">
-    <div class="section-heading"><h2 id="research-title"><span class="section-number">1</span>Research</h2><p>From facial signals to immersive experiences.</p></div>
+    <div class="section-heading"><h2 id="research-title"><span class="section-number">1</span>Research</h2><p>What I built, and what the evidence supports.</p></div>
     <div class="project-grid">
       <article class="project-card">
-        <div class="card-media dark"><video controls muted loop playsinline preload="none" poster="assets/blendme_poster.jpg" width="1280" height="720" aria-label="BlendME avatar replay and temporal candidate detection preview"><source src="assets/blendme_loop.mp4" type="video/mp4"></video></div>
-        <div class="card-body"><p class="status"><span class="status-dot"></span>Published · CVPR SVC 2026</p><h3><a href="projects/blendme/">BlendME</a></h3><p class="card-summary">A VR blendshape microexpression dataset with retrospective self-annotation.</p><p class="key-number"><strong>112</strong> filtered clips</p><a class="text-link" href="projects/blendme/">Explore project <span aria-hidden="true">↗</span></a></div>
+        <div class="card-media dark"><video controls muted loop playsinline preload="none" poster="assets/blendme_poster.jpg" width="1280" height="720" aria-label="BlendME avatar replay and temporal candidate detection"><source src="assets/blendme_loop.mp4" type="video/mp4"></video></div>
+        <div class="card-body">
+          <p class="status">CVPR 2026 workshop · Best Paper Honorable Mention</p>
+          <h3><a href="projects/blendme/">BlendME</a></h3>
+          <p class="card-summary">A headset gives facial blendshape weights, not a face video that an expert can label.</p>
+          <p class="role-line">First author · Capture, detection, and annotation</p>
+          <ul class="impact-list"><li><b>I built</b> TRM candidate detection and an avatar-replay self-annotation tool for the headset signal.</li><li><b>Evidence:</b> 30 participants captured; 112 filtered clips retained from 21 people.</li></ul>
+          <p class="key-number"><strong>112</strong> filtered microexpression clips</p>
+          <a class="text-link" href="projects/blendme/">See the capture and annotation pipeline</a>
+        </div>
       </article>
       <article class="project-card">
-        <figure class="card-media dark"><img src="assets/annotation_ui.jpg" alt="Avatar-replay annotation interface from the related BlendME work" width="1600" height="900" loading="lazy"><figcaption>Related annotation workflow from BlendME</figcaption></figure>
-        <div class="card-body"><p class="status">Research project</p><h3><a href="projects/frame-vr/">FRAME VR</a></h3><p class="card-summary">Standalone adaptive VR cinema, including the BlendME II dataset and recognition component.</p><p class="key-number"><strong>36</strong> viewing-study participants</p><a class="text-link" href="projects/frame-vr/">Explore project <span aria-hidden="true">↗</span></a></div>
+        <figure class="card-media dark"><img src="assets/annotation_ui.jpg" alt="Related BlendME avatar-replay annotation interface" width="1600" height="900" loading="lazy"><figcaption>Related capture and annotation workflow from BlendME</figcaption></figure>
+        <div class="card-body">
+          <p class="status">Research project</p>
+          <h3><a href="projects/adaptive-vr-cinema/">Adaptive VR cinema driven by facial reactions</a></h3>
+          <p class="card-summary">A reaction can request a different scene, yet the film may have no suitable scene left to show.</p>
+          <p class="role-line">First author · Dataset, recognition, system, and study</p>
+          <ul class="impact-list"><li><b>I built</b> the 45-person, 5,602-event corpus, a leave-one-subject-out benchmark with leakage controls, and an on-headset film-selection system.</li><li><b>I tested</b> Static, Adaptive, and Yoked viewing with 36 participants.</li><li><b>Finding:</b> content availability and missing readings limit the changes viewers actually receive.</li></ul>
+          <p class="key-number"><strong>36</strong> viewing-study participants</p>
+          <a class="text-link" href="projects/adaptive-vr-cinema/">See requested versus delivered adaptation</a>
+        </div>
       </article>
     </div>
     <div class="topic-grid" aria-label="Other research topics">
@@ -56,6 +84,18 @@
       <article class="topic-card"><p class="eyebrow">Research topic</p><h3>Ongoing: multimodal egocentric capture with smart glasses (audio and video)</h3></article>
     </div>
   </section>
+
+  <section id="earlier-xr" class="section" aria-labelledby="earlier-title"><div class="section-heading"><h2 id="earlier-title">Earlier XR work</h2><p>The systems and teams that brought me to research.</p></div><div class="earlier-grid">
+    <article class="earlier-card"><div class="earlier-media" data-photo="assets/earlier/monumental-katha.jpg" data-alt="Monumental Katha"><span>AR / HERITAGE</span></div><div class="earlier-body"><h3>Monumental Katha</h3><p>AR for the UNESCO World Heritage Shore Temple at Mahabalipuram; national SIH 2022 winner.</p><p class="earlier-role">Team lead · Team later funded by the Ministry of Culture</p></div></article>
+    <article class="earlier-card"><div class="earlier-media" data-photo="assets/earlier/vr-digital-twin-crane.jpg" data-alt="VR Digital Twin crane"><span>VR / TRAINING</span></div><div class="earlier-body"><h3>VR Digital Twin crane</h3><p>A VR digital twin of a crane; national IIT PALS InnoWAH! winner in 2021.</p><p class="earlier-role">Team lead, VR Digital Twin Project</p></div></article>
+    <article class="earlier-card"><div class="earlier-media" data-photo="assets/earlier/touchless-game.jpg" data-alt="A touchless computer-vision / AR game"><span>CV / PLAY</span></div><div class="earlier-body"><h3>A touchless computer-vision / AR game</h3><p>A final-year game controlled through computer vision and AR; Best Final Year Project, 2023.</p><p class="earlier-role">BE final-year project contributor</p></div></article>
+    <article class="earlier-card"><div class="earlier-media" data-photo="assets/earlier/aditya-l1.jpg" data-alt="Aditya L1 in 360 degrees"><span>VR / SPACE</span></div><div class="earlier-body"><h3>Aditya L1 in 360 degrees</h3><p>A 360-degree VR walkthrough of the Aditya L1 spacecraft for SHAR/ISRO.</p><p class="earlier-role">Research Associate · IIT Madras</p></div></article>
+    <article class="earlier-card"><div class="earlier-media" data-photo="assets/earlier/thermal-super-resolution.jpg" data-alt="Thermal detail from RGB and geometry"><span>3D / THERMAL</span></div><div class="earlier-body"><h3>Thermal detail from RGB and geometry</h3><p>Thermal super-resolution using RGB guidance and 3D Gaussian Splatting.</p><p class="earlier-role">Research project contributor · IIT Madras</p></div></article>
+    <article class="earlier-card"><div class="earlier-media" data-photo="assets/earlier/tactile-emotion.jpg" data-alt="Emotion inducement through touch"><span>HAPTICS / EMOTION</span></div><div class="earlier-body"><h3>Emotion inducement through touch</h3><p>A research project on inducing emotion through tactile feedback.</p><p class="earlier-role">Research project contributor · Touch Lab</p></div></article>
+    <article class="earlier-card"><div class="earlier-media" data-photo="assets/earlier/xr-labs.jpg" data-alt="XR Labs / Metarvrse Technologies"><span>UNITY / XR</span></div><div class="earlier-body"><h3>XR Labs / Metarvrse Technologies</h3><p>Unity 3D software development in an XR company.</p><p class="earlier-role">Junior Unity 3D Developer · 1 Mar to 20 Jun 2023</p></div></article>
+    <article class="earlier-card"><div class="earlier-media" data-photo="assets/earlier/omnispatial.jpg" data-alt="OmniSpatial Interactive"><span>XR / INTERNSHIP</span></div><div class="earlier-body"><h3>OmniSpatial Interactive</h3><p>Work on ongoing immersive-technology projects during my first AR/VR internship.</p><p class="earlier-role">XR Developer Intern · 12 Jul to 31 Oct 2021</p></div></article>
+    <article class="earlier-card"><div class="earlier-media" data-photo="assets/earlier/imaginate.jpg" data-alt="Imaginate"><span>AR + VR / COLLABORATION</span></div><div class="earlier-body"><h3>Imaginate</h3><p>Software development in a company building VR/AR collaboration experiences.</p><p class="earlier-role">Software Development Intern · Aug to Oct 2022</p></div></article>
+  </div></section>
 
   <section id="papers" class="section" aria-labelledby="papers-title">
     <div class="section-heading"><h2 id="papers-title"><span class="section-number">2</span>Papers</h2><p>Published work.</p></div>
@@ -68,7 +108,7 @@
     <div class="section-heading"><h2 id="experience-title"><span class="section-number">3</span>Experience / Timeline</h2><p>2026 back to 2019.</p></div>
     <div class="timeline">
       <article class="year-card"><h3>2026</h3><div><h4>BlendME at CVPR SVC</h4><p>Published at the Workshop on Subtle Visual Computing. Best Paper Honorable Mention.</p></div></article>
-      <article class="year-card"><h3>2025</h3><div><h4>Research at Touch Lab, IIT Madras</h4><p>Research Associate, July 2023 to present. Headset face capture and facial emotion analysis with Dolby Laboratories through its University Research Collaboration program.</p></div></article>
+      <article class="year-card"><h3>2025</h3><div><h4>From facial capture to a viewing system</h4><p>Worked on emotion-adaptive VR cinema, alongside RGB-guided thermal super-resolution and tactile-feedback emotion inducement.</p></div></article>
       <article class="year-card"><h3>2024</h3><div><h4>MS by Research, IIT Madras</h4><p>Department of Applied Mechanics and Biomedical Engineering. Advisor: Prof. Manivannan Muniyandi.</p></div></article>
       <article class="year-card"><h3>2023</h3><div><h4>From XR development to research</h4><ul><li>Research Associate, Touch Lab, from July.</li><li>Junior Unity 3D Developer, XR Labs / Metarvrse Technologies, 1 March to 20 June.</li><li>Completed BE Computer Science at KCG. Best Outgoing Student in the department and Best Final Year Project.</li></ul></div></article>
       <article class="year-card"><h3>2022</h3><div><h4>Industry experience and team projects</h4><ul><li>Software Development Intern, Imaginate, August to October.</li><li>Winner and Team Lead, Smart India Hackathon, for Monumental Katha, AR for monuments.</li><li>Winner, GAVS 24-hour hackathon.</li></ul></div></article>
@@ -78,8 +118,20 @@
     </div>
   </section>
 
+  <section id="news" class="section" aria-labelledby="news-title"><div class="section-heading"><h2 id="news-title">News</h2><p>Milestones, with dates.</p></div><ul class="news-list">
+    <li><time>2026</time><p>BlendME received the Best Paper Honorable Mention at the CVPR Workshop on Subtle Visual Computing.</p></li>
+    <li><time>2024</time><p>I began my MS by Research at IIT Madras, advised by Prof. Manivannan Muniyandi.</p></li>
+    <li><time>Jul 2023</time><p>I joined Touch Lab as a Research Associate; my research includes headset face capture with Dolby Laboratories.</p></li>
+    <li><time>2023</time><p>My touchless computer-vision / AR game received Best Final Year Project, and I received Best Outgoing Student in CSE at KCG.</p></li>
+    <li><time>2022</time><p>I led the Monumental Katha team to a national Smart India Hackathon win. The team later received Ministry of Culture funding to expand the work.</p></li>
+    <li><time>2021</time><p>Our VR Digital Twin Crane won the national IIT PALS InnoWAH! hackathon.</p></li>
+    <li><time>2020</time><p>I won the PALS NEXGEN 3D 96-hour hackathon.</p></li>
+  </ul></section>
+
+  <section id="about" class="section about-block" aria-labelledby="about-title"><div class="section-heading"><h2 id="about-title">Why I care about expressive faces</h2></div><p>I came to research by building AR and VR experiences, leading hackathon teams, and serving as president of the XR Club at KCG. At school, I won caricature and cartooning competitions three times, including at inter-school level. Drawing faces made me care about how a small movement can change an expression. Today, in Touch Lab at IIT Madras, I build tools to capture, annotate, and test facial motion rather than assuming the sensor keeps it. I want my PhD to connect that measurement work to digital humans and immersive experiences that can respond to people.</p><p class="source-note">Creative background and its connection to expressive faces: author-supplied, 23 November 2026.</p><p class="skills-line"><b>Tools I work with:</b> Python · PyTorch · Unity / C# · Blender · facial blendshapes · user studies · participant-level evaluation</p></section>
+
   <section id="contact" class="contact section" aria-labelledby="contact-title">
-    <div><p class="eyebrow">Contact</p><h2 id="contact-title">Let's talk research.</h2><p>I am seeking a PhD position starting Fall 2027.</p><p class="timing">Thesis submission March 2027 · Convocation July 2027</p></div>
+    <div><p class="eyebrow">Contact</p><h2 id="contact-title">Seeking a PhD position starting Fall 2027</h2><p>I want to study how digital humans retain facial motion, and how immersive systems can use it.</p><p class="timing">Thesis submission March 2027 · Convocation July 2027</p></div>
     <div class="contact-links"><a class="email-link" href="mailto:swethasree.sribabu@gmail.com">swethasree.sribabu@gmail.com <span aria-hidden="true">↗</span></a><div class="resource-links"><a href="https://github.com/Swethasree-Sribabu">GitHub</a><a href="https://www.linkedin.com/in/swethasree-s/">LinkedIn</a><a href="assets/Swethasree_Sribabu_CV.pdf">CV</a></div></div>
   </section>
 </main>

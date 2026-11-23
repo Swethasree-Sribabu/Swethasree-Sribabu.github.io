@@ -1,2 +1,4 @@
 *.bak_*
 .DS_Store
+
+*.before_content.bak
