@@ -76,3 +76,8 @@ figcaption { color:#555; margin-top:12px; }
 .project-page figure img { max-height:480px; object-fit:contain; }
 
 .model-credit a { text-decoration:underline; text-underline-offset:2px; }
+
+.paper-media { margin:0; }
+.paper-media figcaption { font-size:12px; line-height:1.4; margin:6px 0 0; }
+.project-page .project-thumbnail { width:160px; margin:20px 0; }
+.project-page .project-thumbnail img { width:160px; height:160px; }
